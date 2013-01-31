@@ -16,7 +16,7 @@ a.btn-success {
   -moz-border-radius: 6px;
   border-radius: 6px;
   font-size: 15px;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 a.btn-success:hover {
@@ -27,6 +27,12 @@ a.btn-success:hover {
 
 a.btn-success:active {
   background-color: #00aae3;
+}
+
+li a:focus, li a:hover {
+  color: #99cc00;
+  text-decoration: none;
+  background-position: 0px;
 }
 
 .homepage .header {
@@ -68,7 +74,7 @@ a.btn-success:active {
 }
 
 .homepage .header .main-nav a {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   color: #00aae3;
   font-size: 14px;
   font-weight: bold;;
@@ -79,7 +85,7 @@ a.btn-success:active {
 }
 
 .homepage .header h1 {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 42px;
   font-weight: bold;
   color: #363636;
@@ -88,7 +94,7 @@ a.btn-success:active {
 }
 
 .homepage .header p.description {
-  font-family: Geneva, sans-serif;
+  font-family: Geneva, "MS Sans Serif", sans-serif;
   font-size: 18px;
   color: #555555;
   text-align: center;
@@ -120,7 +126,7 @@ a.btn-success:active {
 .homepage .header .filter select {
   width: 180px;
   height: 24px;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
@@ -128,6 +134,47 @@ a.btn-success:active {
   float: right;
   padding: 1px 12px;
   margin: -8px 12px 0 0; 
+}
+
+.homepage .sidebar .box {
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 20px 14px;
+  margin-top: 30px;
+}
+
+.homepage .sidebar .box p.title {
+  font-size: 18px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.homepage .sidebar ul {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.homepage .sidebar li {
+  line-height: 22px;
+}
+
+.homepage .sidebar a {
+  font-size: 16px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #00aae3;
+}
+
+.homepage .sidebar input {
+  width: 178px;
+  height: 26px;
+  margin-top: 10px;
+}
+
+.homepage .sidebar a.btn-success {
+  color: #fff;
+  margin: 4px 0 0 81px;
 }
 
 
