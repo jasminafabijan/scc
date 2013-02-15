@@ -480,12 +480,22 @@ table.compare-header td {
   color: #00aae3;
 }
 
+.detail-page .details .annual img.like {
+  margin-top: -5px;
+}
+
 .detail-page .details .annual .number {
-  margin: 0 20px 0 -34px;
+  margin: 0 20px 0 -40px;
+  padding-top: 10px;
+  width: 34px;
+  display: inline-block;
+  text-align: center;
 }
 
 .detail-page .details .annual button {
   font-size: 14px;
+  margin-top: -6px;
+  margin-left: 15px;
 }
 
 .detail-page .details .income {
