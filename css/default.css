@@ -326,7 +326,6 @@ a:hover {
   margin-top: 100px;
   left: auto;
   width: 1023px;
-  height: 280px;
   background-color: rgba(99, 99, 99, 0.95);
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -377,10 +376,34 @@ a:hover {
   width: 1023px;
 }
 
+table.compare-header tr.cards {
+  border-top: none;
+}
+
 table.compare-header td {
-  width: 155px;
-  display: inline-block;
+  width: 135px;
   vertical-align: top;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+  color: #fff;
+}
+
+table.compare-header thead td {
+  display: inline-block;
+}
+
+table.compare-header td:last-child {
+  border-right: none;
+}
+
+table.compare-header td.constant {
+  width: 223px;
+  color: #fff;
+  font-size: 15px;
+}
+
+table.compare-header thead td.constant {
+  height: 222px;
 }
 
 .compare-header img.select-card {
@@ -399,11 +422,12 @@ table.compare-header td {
   text-align: center;
   line-height: 18px;
   width: 136px;
+  height: 54px;
 }
 
 .compare-header a.remove-card {
   color: #fff;
-  margin-right: 14px;
+  margin-right: -5px;
   margin-bottom: -10px;
   float: right;
   position: relative;
@@ -411,10 +435,72 @@ table.compare-header td {
 
 .homepage .modal .btn-primary {
   float: right;
-  margin: 12px 25px 0 0;
+  margin: 12px 20px 23px 0;
 }
 
 /* Comparison box */
+
+.table-bordered {
+  border: none;
+  background-color: rgba(99, 99, 99, 0.95);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  width: 1024px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child {
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+}
+
+tbody {
+  background-color: rgba(99, 99, 99, 0.95);
+}
+
+tbody td.data {
+  text-align: center;
+  display: table-cell;
+  vertical-align: center;
+}
+
+tbody tr {
+  border-top: 1px solid #dddddd;
+  /*height: 55px;*/
+}
+
+tr.tr-data td {
+  height: 55px;
+}
+
+tbody tr.catheader {
+  height: auto;
+  padding: 10px;
+}
+
+tbody td.catheader {
+   background-color: #959595;
+   padding-left: 20px;
+   font-weight: bold;
+}
+
+tbody td.list {
+  text-align: left;
+  display: table-cell;
+  font-size: 13px;
+  padding: 10px 8px;
+}
+
+tbody td.list ul {
+  margin-left: 20px;
+}
+
+tbody td.list li {
+  line-height: 18px;
+  margin-bottom: 6px;
+}
 
 /* Detail page */
 
