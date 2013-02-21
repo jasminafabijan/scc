@@ -49,25 +49,12 @@ a:hover {
   width: 1023px;
 }
 
-.span3 {
-  width: 321px;
-}
-
-.span4 {
-  width: 438px;
-}
-
-.span7 {
-  width: 789px;
-}
-
-.span8 {
-  width: 906px;
+.row {
+  margin-left: 0px;
 }
 
 .span9 {
   margin-left: 0px;
-  width: 1023px;
 }
 
 .header img.logo {
@@ -177,6 +164,7 @@ a:hover {
 
 .homepage .span2 {
   width: 204px;
+  margin-left: 0px;
 }
 
 .homepage .sidebar .box {
@@ -353,7 +341,7 @@ a:hover {
 .modal-body {
   padding: 0px;
   float: right;
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .close {
@@ -371,42 +359,62 @@ a:hover {
   margin-left: 234px;
 }
 
-.compare-header {
+.comparison-box {
   margin-top: 25px;
   width: 1023px;
 }
 
-table.compare-header tr.cards {
+table.comparison-box tr.cards {
   border-top: none;
 }
 
-table.compare-header td {
-  width: 135px;
+table.comparison-box td {
+  width: 136px;
   vertical-align: top;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #a1a1a1;
   padding: 10px;
   color: #fff;
 }
 
-table.compare-header thead td {
+table.comparison-box thead td {
   display: inline-block;
 }
 
-table.compare-header td:last-child {
+table.comparison-box td:last-child {
   border-right: none;
+  padding-right: 28px;
 }
 
-table.compare-header td.constant {
-  width: 223px;
+table.comparison-box td.constant {
+  width: 180px;
   color: #fff;
   font-size: 15px;
+  padding-left: 30px;
+  vertical-align: middle;
 }
 
-table.compare-header thead td.constant {
-  height: 222px;
+table.comparison-box thead td.constant {
+  height: 113px;
+  padding-top: 100px;
 }
 
-.compare-header img.select-card {
+table.comparison-box thead .constant a {
+  color: #fff;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+table.comparison-box thead .constant a:hover {
+  color: #000;
+  opacity: 0.4;
+}
+
+.comparison-box td.select {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.comparison-box img.select-card {
   width: 120px;
   height: 74px;
   position: relative;
@@ -414,7 +422,7 @@ table.compare-header thead td.constant {
   margin-left: 8px;
 }
 
-.compare-header .select span.card-name {
+.comparison-box .select span.card-name {
   display: block;
   color: #fff;
   font-size: 13px;
@@ -425,7 +433,7 @@ table.compare-header thead td.constant {
   height: 54px;
 }
 
-.compare-header a.remove-card {
+.comparison-box a.remove-card {
   color: #fff;
   margin-right: -5px;
   margin-bottom: -10px;
@@ -463,34 +471,31 @@ tbody {
 tbody td.data {
   text-align: center;
   display: table-cell;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
 tbody tr {
-  border-top: 1px solid #dddddd;
-  /*height: 55px;*/
+  border-top: 1px solid #a1a1a1;
 }
 
 tr.tr-data td {
-  height: 55px;
-}
-
-tbody tr.catheader {
-  height: auto;
-  padding: 10px;
+  height: 35px;
 }
 
 tbody td.catheader {
-   background-color: #959595;
-   padding-left: 20px;
-   font-weight: bold;
+  background-color: #959595;
+  padding: 4px 0 4px 20px;
+  font-weight: bold;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 tbody td.list {
   text-align: left;
   display: table-cell;
   font-size: 13px;
-  padding: 10px 8px;
+  padding: 10px 6px;
 }
 
 tbody td.list ul {
@@ -500,6 +505,22 @@ tbody td.list ul {
 tbody td.list li {
   line-height: 18px;
   margin-bottom: 6px;
+}
+
+tbody span.number {
+  margin: 0px 0 0 -32px;
+  color: #363636;
+  width: 34px;
+  text-align: center;
+}
+
+tbody img.unlike {
+  margin-left: 14px;
+}
+
+tbody .list button {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* Detail page */
@@ -544,6 +565,14 @@ tbody td.list li {
 
 .detail-page .details .annual table {
   border-right: 1px solid #e1e1e1;
+}
+
+.detail-page table tbody {
+  background: none;
+}
+
+.detail-page table tbody tr {
+  border-top: none;
 }
 
 .detail-page .details .annual .table td.value {
@@ -649,12 +678,10 @@ tbody td.list li {
   display: table;
   content: "";
   clear: both;
-  margin-left: 30px;
 }
 
 .detail-page .comments h3 {
   margin-bottom: 10px;
-  margin-left: 0px;
 }
 
 .detail-page .comments span {
@@ -730,7 +757,7 @@ tbody td.list li {
 }
 
 .detail-page .add-comment .text {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .detail-page .add-comment textarea {
