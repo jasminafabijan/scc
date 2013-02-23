@@ -14,6 +14,26 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#myModal').on('shown', function () {
+					var windowHeight = $(window).height();
+					var headerHeight = $(".modal-header").height();
+					var bodyHeight = windowHeight - headerHeight;
+
+					$("#myModal").css({height: windowHeight});
+					$(".modal-body").css({'max-height': bodyHeight});
+
+					$("body").css({overflow: 'hidden'});
+  				
+				});
+
+				$('#myModal').on('hide', function () {
+					$("body").css({overflow: 'auto'});
+				});
+			});
+		</script>
 		
 	</head>
 
@@ -220,9 +240,9 @@
 		
 	 	  <div id="myModal" class="span9 modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	 	    <div class="modal-header">
+
 	 	      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close</button>
-	 	    </div>
-	 	    <div class="modal-body">
+
 	 	      <table class="comparison-box">
 	 	      	<thead>
 	 	      	<tr class="cards">
@@ -289,6 +309,11 @@
 	 	      		</td>
 	 	      	</tr>
 	 	      </thead>
+	 	     
+          </table>
+	 	    </div>
+	 	    <div class="modal-body">
+	 	      <table class="comparison-box">
 	 	      
             <tbody class="span9">
               <tr class="tr-data">
@@ -507,6 +532,11 @@
                 	<ul>
                 		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </li>
                 	</ul>
+                	<img class="like" src="img/like-button.png">
+            			<span class="number">47</span>
+            			<img class="unlike" src="img/unlike-button.png">
+            			<span class="number">253</span>
+            			<button class="btn">Apply Now</button>
                 </td>
                 <td class="list">
                 	<ul>
