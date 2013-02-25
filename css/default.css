@@ -154,6 +154,7 @@ a:hover {
   height: 24px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 12px;
+  padding-top: 2px;
 }
 
 .homepage .header .filter .btn-success {
@@ -248,7 +249,7 @@ a:hover {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 8px 10px 0 10px;
+  padding: 8px 0px 0 10px;
 }
 
 .homepage .row-fluid {
@@ -264,10 +265,13 @@ a:hover {
   font-size: 12px;
   margin-top: 6px;
   height: 38px;
+  width: 158px;
 }
 
 .homepage .row-fluid .span2 a {
   padding: 4px 10px;
+  -moz-padding-start: 9px;
+  -moz-padding-end: 10px;
   background-color: #dddddd;
   background-image: -webkit-linear-gradient(top, #ebebeb, #dddddd);
   background-image: -o-linear-gradient(top, #ebebeb, #dddddd);
@@ -302,7 +306,7 @@ a:hover {
 }
 
 
-/* Modal - header */
+/* Modal */
 
 .modal-backdrop {
    background: none;
@@ -354,12 +358,64 @@ a:hover {
   text-shadow: none;
   opacity: 1.0;
   filter: alpha(opacity=100);
-  margin: 5px 5px 15px 0;
+  margin: 5px 10px 15px 0;
 }
 
-.homepage .offset2 {
-  margin-left: 234px;
+.modal-header .close:hover {
+  color: #000;
+  opacity: 0.4;
 }
+
+/* Compare-header */
+
+.homepage .compare-header {
+  margin-left: 222px;
+}
+
+.compare-header td {
+  width: 136px;
+  vertical-align: top;
+  padding: 10px;
+  color: #fff;
+}
+
+.compare-header img.select-card {
+  width: 120px;
+  height: 74px;
+  position: relative;
+  margin-top: -112px;
+  margin-left: 8px;
+}
+
+.compare-header .select span.card-name {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  margin-top: -12px;
+  text-align: center;
+  line-height: 18px;
+  width: 136px;
+  height: 54px;
+}
+
+.compare-header a.remove-card {
+  color: #fff;
+  margin-right: -5px;
+  margin-bottom: -10px;
+  float: right;
+  position: relative;
+}
+
+.homepage .modal button.compare {
+  margin-right: 26px;
+}
+
+.homepage .modal .btn-primary {
+  float: right;
+  margin: 12px 20px 23px 0;
+}
+
+/* Comparison box */
 
 .comparison-box {
   margin-top: 0px;
@@ -443,13 +499,6 @@ table.comparison-box thead .constant a:hover {
   position: relative;
 }
 
-.homepage .modal .btn-primary {
-  float: right;
-  margin: 12px 20px 23px 0;
-}
-
-/* Comparison box */
-
 .table-bordered {
   border: none;
   background-color: rgba(99, 99, 99, 0.95);
@@ -466,7 +515,7 @@ table.comparison-box thead .constant a:hover {
   border-top-left-radius: 0px;
 }
 
-tbody {
+.comparison-box tbody {
   background-color: rgba(99, 99, 99, 0.95);
 }
 
@@ -476,7 +525,7 @@ tbody td.data {
   vertical-align: middle;
 }
 
-tbody tr {
+.comparison-box tbody tr {
   border-top: 1px solid #a1a1a1;
 }
 
