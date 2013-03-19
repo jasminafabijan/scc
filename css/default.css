@@ -613,7 +613,8 @@ tbody .list button {
 /* Common css */
 
 .detail-page .container,
-.about-us .container {
+.about-us .container,
+.contact-us .container {
   background-color: #fff;
   padding-bottom: 50px;
   -webkit-border-bottom-left-radius: 4px;
@@ -831,7 +832,9 @@ tbody .list button {
 }
 
 .detail-page .add-comment input,
-.detail-page .add-comment textarea {
+.detail-page .add-comment textarea,
+.contact-us .span6 input,
+.contact-us textarea {
   background-color: #ececec;
   -webkit-box-shadow: 0 3px 2px -2px #959595;
   -moz-box-shadow: 0 3px 2px -2px #959595;
@@ -872,17 +875,20 @@ tbody .list button {
   width: 170px;
 } 
 
-.about-us .offset2 {
+.about-us .offset2,
+.contact-us .offset2 {
   margin-left: 230px;
 }
 
-.about-us .span6 {
-  width: 560px;
+.about-us .span6,
+.contact-us .span6 {
+  width: 570px;
 }
 
-/* About us */
+/* About us page */
 
-.about-us h1 {
+.about-us h1,
+.contact-us h1 {
   font-size: 24px;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: normal;
@@ -923,3 +929,43 @@ tbody .list button {
   color: #898989;
 }
 
+.footer .span3 {
+  width: 270px;
+}
+
+.footer .contact {
+  margin-left: 0px;
+}
+
+/* Contact us page */
+
+.contact-us .span3 {
+  width: 270px;
+}
+
+.contact-us p {
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-size: 18px;
+  color: #555555;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-us .control-group {
+  margin-left: 0px;
+}
+
+.contact-us input {
+  width: 255px;
+  height: 23px;
+}
+
+.contact-us textarea {
+  width: 255px;
+  height: 92px;
+}
+
+.contact-us button {
+  margin-top: 10px;
+  float: right;
+}
