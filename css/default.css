@@ -473,7 +473,6 @@ table.comparison-box td:last-child {
 table.comparison-box td.constant {
   width: 180px;
   color: #fff;
-  font-size: 15px;
   padding-left: 30px;
   vertical-align: middle;
 }
@@ -551,6 +550,7 @@ tbody td.data {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  font-size: 13px;
 }
 
 tbody td.data2,
@@ -572,7 +572,6 @@ tr.tr-data td {
 tbody td.catheader {
   background-color: #959595;
   padding: 4px 0 4px 20px;
-  font-weight: bold;
 }
 
 tbody td.list {
