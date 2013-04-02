@@ -553,6 +553,10 @@ tbody td.data {
   font-size: 13px;
 }
 
+tbody td.add-r {
+  text-align: left;
+}
+
 tbody td.data2,
 tbody td.data3,
 tbody td.data4 {
@@ -572,6 +576,11 @@ tr.tr-data td {
 tbody td.catheader {
   background-color: #959595;
   padding: 4px 0 4px 20px;
+}
+
+tbody td.income {
+  background-color: transparent;
+  padding-left: 30px;
 }
 
 tbody td.list {
@@ -604,9 +613,12 @@ tbody .list .unlike {
   margin-left: 10px;
 }
 
-tbody .list button {
-  margin-top: 10px;
-  margin-bottom: 20px;
+.homepage tbody.span9 .buttons {
+  padding-left: 8px;
+}
+
+.homepage tbody.span9 .list button {
+  margin: 10px 16px 20px 0;
 }
 
 /* Detail page */
@@ -661,8 +673,8 @@ tbody .list button {
 .detail-page .name h3 {
   font-size: 22px;
   font-family: Verdana, Geneva, sans-serif;
-  font-weight: normal;
-  color: #000;
+  font-weight: bold;
+  color: #363636;
 }
 
 .detail-page .name a {
@@ -713,8 +725,9 @@ tbody .list button {
 }
 
 .detail-page .content h3 {
-  color: #464646;
+  color: #252525;
   margin: -2px 0 0 20px;
+  font-weight: normal;
 }
 
 .detail-page .content .eligibility h3,
@@ -734,27 +747,28 @@ tbody .list button {
   border-top: none;
   font-size: 16px;
   color: #555555;
+  width: 320px;
+  line-height: 16px;
 }
 
-.detail-page .content .eligibility .table td.income {
+.detail-page .content .eligibility .table td.requirement,
+.detail-page .content .eligibility .requirement {
   color: #555555;
   font-weight: bold;
-  text-align: center;
+  padding-left: 0px;
 }
 
 .detail-page .content .eligibility .table td.value {
   color: #252525;
-  text-align: center;
+  padding-left: 25px;
 }
 
-.detail-page .content .eligibility .table td.additional {
-  color: #555555;
-  font-weight: bold;
-  width: 260px;
-}
+.detail-page .eligibility .span6 {
+  margin-top: 10px;
+} 
 
-.detail-page .content .eligibility .table td.requirement {
-  color: #252525;
+.detail-page .eligibility .terms {
+  color: #363636;
 }
 
 .detail-page .content ul {
@@ -820,6 +834,10 @@ tbody .list button {
 .detail-page .comments .buttons img {
   float: none;
   margin-left: 30px;
+}
+
+.detail-page .comments .buttons img.unlike {
+  margin-left: 0px;
 }
 
 .detail-page .comments span {
